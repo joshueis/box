@@ -31,12 +31,11 @@ defmodule Box do
   def getId(coord) do
 
     index = {List.first(coord), List.last(coord)}
-    # Integer.to_string(@items[index])
     @items[index]
   end
 
   @doc """
-  Promt the user for coordinates, get rid of unncessary whitespacing, parse to get coordinates
+  Prompt the user for coordinates, get rid of unncessary whitespacing, parse to get coordinates
   get integer values from strings
   """
   def getCoordinates do
@@ -53,7 +52,7 @@ defmodule Box do
   end
 
   @doc """
-  Calculates the sum of two numbers.
+  Check if str is an interger.
   """
   def isValidCoor(str) do
     case Integer.parse(str) do
